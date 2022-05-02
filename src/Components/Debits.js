@@ -18,7 +18,7 @@ const Debits = (props) => {
       return (
           <div className="debit-page">
              <h1 className="debit-title">Debits</h1>
-           <form onSubmit={props.addDebit}>
+           <form onSubmit={props.addDebit} className='add-value-form'>
                <input type="text" name="description" />
                <input type="number" name="amount" />
                <button type="submit">Add Debit</button>

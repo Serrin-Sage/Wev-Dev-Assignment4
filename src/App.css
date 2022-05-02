@@ -83,7 +83,10 @@
   color: white;
 }
 
-
+.add-value-form {
+  display: flex;
+  flex-direction: column;
+}
 /******** DEBIT PAGE ********/
 .debit-page{
   display: flex;
@@ -107,10 +110,7 @@
   text-align: center;
 }
 
-.add-value-form {
-  display: flex;
-  flex-direction: column;
-}
+
 /******** CREDIT PAGE ********/
 .credit-page{
   display: flex;
