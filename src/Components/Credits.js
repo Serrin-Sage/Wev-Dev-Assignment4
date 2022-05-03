@@ -19,9 +19,9 @@ const Credits = (props) => {
           <div className="credit-page">
              <h1 className="credit-title">Credits</h1>
              <form onSubmit={props.addCredit} className='add-value-form'>
-               <input type="text" name="description" />
-               <input type="number" name="amount" />
-               <button type="submit">Add Credit</button>
+               <input type="text" name="description" placeholder="item" className="input-container"/>
+               <input type="number" name="amount" placeholder="amount" className="input-container"/>
+               <button type="submit" className="submit-btn">Add Credit</button>
              </form>
            <div className="content-container">
               {creditsDisplay()}

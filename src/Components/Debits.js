@@ -19,13 +19,12 @@ const Debits = (props) => {
           <div className="debit-page">
              <h1 className="debit-title">Debits</h1>
            <form onSubmit={props.addDebit} className='add-value-form'>
-               <input type="text" name="description" />
-               <input type="number" name="amount" />
-               <button type="submit">Add Debit</button>
+               <input type="text" name="description" placeholder="item" className="input-container"/>
+               <input type="number" name="amount" placeholder="amount" className="input-container"/>
+               <button type="submit" className="submit-btn">Add Debit</button>
              </form>
            <div className="content-container">
-              {debitsDisplay()}
-              
+              {debitsDisplay()}   
            </div>
            
           </div>

@@ -78,6 +78,7 @@
   border-radius: 8px;
   background-color: aliceblue;
 }
+
 .links:hover {
   background-color: black;
   color: white;
@@ -86,7 +87,31 @@
 .add-value-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  font-size: 20px;
 }
+
+.input-container {
+  margin: 0.5rem;
+  height: 30px;
+  text-align: center;
+}
+.submit-btn {
+  margin: 0.3rem;
+  width: 60px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.submit-btn:hover {
+  background-color: grey;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+
 /******** DEBIT PAGE ********/
 .debit-page{
   display: flex;
@@ -193,7 +218,4 @@ label {
 }
 .edit-button:hover {
   cursor: pointer;
-}
-button {
- 
 }

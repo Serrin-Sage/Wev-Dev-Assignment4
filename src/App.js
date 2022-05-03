@@ -65,6 +65,7 @@ class App extends React.Component {
     balance = balance - amount;
     debits = [...debits, newDebit]
     this.setState({debits: debits, accountBalance: balance})
+    alert(`You added ${description} to Debits`)
   }
 
   addCredit = (e) => {
@@ -87,6 +88,7 @@ class App extends React.Component {
     credits = [...credits, newDebit]
     
     this.setState({credits: credits, accountBalance: balance})
+    alert(`You added ${description} to Credits`)
   }
 
   changeUsername = (logInInfo) => {
